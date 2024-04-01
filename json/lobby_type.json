@@ -1,0 +1,92 @@
+{
+    "0": {
+      "id": 0,
+      "name": "lobby_type_normal",
+      "type": "Normal",
+      "balanced": true
+    },
+    "1": {
+      "id": 1,
+      "name": "lobby_type_practice",
+      "type": "Practice",
+      "balanced": true
+    },
+    "2": {
+      "id": 2,
+      "name": "lobby_type_tournament",
+      "type": "Tournament",
+      "balanced": true
+    },
+    "3": {
+      "id": 3,
+      "name": "lobby_type_tutorial",
+      "type": "Tutorial"
+    },
+    "4": {
+      "id": 4,
+      "name": "lobby_type_coop_bots",
+      "type": "Coop Bots"
+    },
+    "5": {
+      "id": 5,
+      "name": "lobby_type_ranked_team_mm",
+      "type": "Ranked Team",
+      "balanced": true
+    },
+    "6": {
+      "id": 6,
+      "name": "lobby_type_ranked_solo_mm",
+      "type": "Ranked Solo",
+      "balanced": true
+    },
+    "7": {
+      "id": 7,
+      "name": "lobby_type_ranked",
+      "type": "Ranked Party",
+      "balanced": true
+    },
+    "8": {
+      "id": 8,
+      "name": "lobby_type_1v1_mid",
+      "type": "1v1 Mid"
+    },
+    "9": {
+      "id": 9,
+      "name": "lobby_type_battle_cup",
+      "type": "Battle Cup",
+      "balanced": true
+    },
+    "10": {
+      "id": 10,
+      "name": "lobby_type_local_bots",
+      "type": "Localhost",
+      "balanced": true
+    },
+    "11": {
+      "id": 11,
+      "name": "lobby_type_spectator",
+      "type": "Spectator",
+      "balanced": true
+    },
+    "12": {
+      "id": 12,
+      "name": "lobby_type_event",
+      "type": "Event"
+    },
+    "13": {
+      "id": 13,
+      "name": "lobby_type_gauntlet",
+      "type": "Gauntlet",
+      "balanced": true
+    },
+    "14": {
+      "id": 14,
+      "name": "lobby_type_new_player",
+      "type": "New Player"
+    },
+    "15": {
+      "id": 15,
+      "name": "lobby_type_featured",
+      "type": "Featured"
+    }
+  } 

@@ -1,0 +1,142 @@
+{
+    "0": {
+        "id": 0,
+        "name": "game_mode_unknown",
+        "type": "Unknown",
+        "balanced": true
+    },
+    "1": {
+        "id": 1,
+        "name": "game_mode_all_pick",
+        "type": "All Pick",
+        "balanced": true
+    },
+    "2": {
+        "id": 2,
+        "name": "game_mode_captains_mode",
+        "type": "Captains Mode",
+        "balanced": true
+    },
+    "3": {
+        "id": 3,
+        "name": "game_mode_random_draft",
+        "type": "Random Draft",
+        "balanced": true
+    },
+    "4": {
+        "id": 4,
+        "name": "game_mode_single_draft",
+        "type": "Single Draft",
+        "balanced": true
+    },
+    "5": {
+        "id": 5,
+        "name": "game_mode_all_random",
+        "type": "All Random",
+        "balanced": true
+    },
+    "6": {
+        "id": 6,
+        "name": "game_mode_intro",
+        "type": "Intro"
+    },
+    "7": {
+        "id": 7,
+        "name": "game_mode_diretide",
+        "type": "Diretide"
+    },
+    "8": {
+        "id": 8,
+        "name": "game_mode_reverse_captains_mode",
+        "type": "Reverse Captains Mode"
+    },
+    "9": {
+        "id": 9,
+        "name": "game_mode_greeviling",
+        "type": "Greeviling"
+    },
+    "10": {
+        "id": 10,
+        "name": "game_mode_tutorial",
+        "type": "Tutorial"
+    },
+    "11": {
+        "id": 11,
+        "name": "game_mode_mid_only",
+        "type": "Mid Only"
+    },
+    "12": {
+        "id": 12,
+        "name": "game_mode_least_played",
+        "type": "Least Played",
+        "balanced": true
+    },
+    "13": {
+        "id": 13,
+        "name": "game_mode_limited_heroes",
+        "type": "Limited Heroes"
+    },
+    "14": {
+        "id": 14,
+        "name": "game_mode_compendium_matchmaking",
+        "type": "Compendium_matchmaking"
+    },
+    "15": {
+        "id": 15,
+        "name": "game_mode_custom",
+        "type": "Custom"
+    },
+    "16": {
+        "id": 16,
+        "name": "game_mode_captains_draft",
+        "type": "Captains Draft",
+        "balanced": true
+    },
+    "17": {
+        "id": 17,
+        "name": "game_mode_balanced_draft",
+        "type": "Balanced Draft",
+        "balanced": true
+    },
+    "18": {
+        "id": 18,
+        "name": "game_mode_ability_draft",
+        "type": "Ability Draft"
+    },
+    "19": {
+        "id": 19,
+        "name": "game_mode_event",
+        "type": "Event"
+    },
+    "20": {
+        "id": 20,
+        "name": "game_mode_all_random_death_match",
+        "type": "All Random Death Match"
+    },
+    "21": {
+        "id": 21,
+        "name": "game_mode_1v1_mid",
+        "type": "1v1 Mid"
+    },
+    "22": {
+        "id": 22,
+        "name": "game_mode_all_draft",
+        "type": "All Draft",
+        "balanced": true
+    },
+    "23": {
+        "id": 23,
+        "name": "game_mode_turbo",
+        "type": "Turbo"
+    },
+    "24": {
+        "id": 24,
+        "name": "game_mode_mutation",
+        "type": "Mutation"
+    },
+    "25": {
+        "id": 25,
+        "name": "game_mode_coaches_challenge",
+        "type": "Coaches Challenge"
+    }
+} 

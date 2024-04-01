@@ -1,0 +1,1 @@
+CREATE TABLE pijawcacast (ids SERIAL, user_id BIGINT PRIMARY KEY, nickname TEXT, subscription SMALLINT, admin_on SMALLINT, avatar_url TEXT, experience INT, opendota_id INT, last_voice_join TEXT);
