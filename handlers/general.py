@@ -83,7 +83,7 @@ class commands():
         except AttributeError:
             pass
         
-        message = core.start(user_id, nickname, subscription=0, admin_on=0, avatar_url=avatar_url)
+        message = core.start(user_id, nickname, subscription=0, admin_on=0, avatar_url=avatar_url, experience=0)
         
         if message == 0:
             await ctx.send(embed=embeds.startEmbed0())
@@ -105,19 +105,29 @@ class commands():
         for row in core.profile(user_id)[0]:
             nickname = row[2]
             avatar_url = row[5]
+            experience = row[6]
             subscription = row[3]
-            experience = row[6] // 10
+            
             if subscription == 1:
                 subscription = 'Да'
             else:
                 subscription = 'Нет'
-        
-        for placehold in core.profile(user_id)[1]:
-            if placehold:
-                user_rank = placehold
                 
-        await ctx.send(embed = embeds.profileEmbed(f'• {nickname.upper()}', avatar_url, experience, user_rank, subscription), 
-                    view = buttons.profile_btn())
+            if experience <= 9:
+                experience = row[6] // 10
+                for placehold in core.profile(user_id)[1]:
+                    if placehold:
+                        user_rank = placehold
+                    
+                        await ctx.send(embed = embeds.profileEmbed(f'• {nickname.upper()}', avatar_url, experience, user_rank, subscription), 
+                        view = buttons.profile_btn())
+            else:
+                for placehold in core.profile(user_id)[1]:
+                    if placehold:
+                        user_rank = placehold
+                    
+                        await ctx.send(embed = embeds.profileEmbed(f'• {nickname.upper()}', avatar_url, experience, user_rank, subscription), 
+                        view = buttons.profile_btn())
 
     @bot.command()
     async def rank(ctx):
@@ -168,6 +178,8 @@ class commands():
         assists = latest_match['assists']
 
         party_size = latest_match['party_size']
+        if party_size == None:
+            party_size = 'Неизвестно'
 
         game_mode = latest_match['game_mode']
         if game_mode is not None:
@@ -196,3 +208,4 @@ class commands():
         await ctx.send(embed = embeds.castlastEmbed(
             match_id, duration, party_size, game_mode, lobby_type, hero_id, kills, deaths, assists)
                        )
+        

@@ -18,12 +18,12 @@ def dbconn():
         conn.close()
     return response
 
-def start(user_id, nickname, subscription, admin_on, avatar_url):
+def start(user_id, nickname, subscription, admin_on, avatar_url, experience):
     try:
         conn = psycopg.connect(**db_params)
         with conn.cursor() as cur:
-            cur.execute("INSERT INTO pijawcacast (user_id, nickname, subscription, admin_on, avatar_url) VALUES (%s, %s, %s, %s, %s)",
-                            (user_id, nickname, subscription, admin_on, avatar_url))
+            cur.execute("INSERT INTO pijawcacast (user_id, nickname, subscription, admin_on, avatar_url, experience) VALUES (%s, %s, %s, %s, %s, %s)",
+                            (user_id, nickname, subscription, admin_on, avatar_url, experience))
             conn.commit()
             response = 0
     except:
@@ -80,7 +80,7 @@ def update_experience(user_id):
             
     except Exception as e:
         print(e)
-
+    
 def rank(user_id):
     try:
         conn = psycopg.connect(**db_params)
