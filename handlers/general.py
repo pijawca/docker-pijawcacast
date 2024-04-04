@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from misc import bot
+from config import admins
 from handlers import embeds
 from re import findall
 import handlers.buttons as buttons
@@ -7,7 +8,6 @@ import disnake
 import core.handlers_db as core
 import requests
 import json
-from config import admins
 
 
 class events():

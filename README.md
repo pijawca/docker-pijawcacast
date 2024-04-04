@@ -1,8 +1,8 @@
 ![logo](https://raw.githubusercontent.com/pijawca/pijawca/main/resources/logo.png) 
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+[![Uptime Ratio](https://img.shields.io/uptimerobot/ratio/m780010966-3242e97a2ffbe3e33ef10eb4.svg)](https://stats.uptimerobot.com/00yWZcKjN)
+[![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](LICENSE)
+[![Official Discord Server](https://discordapp.com/api/guilds/1106578647705469009/embed.png)](https://discord.gg/vvTnyjfjxd)
 
 ## Скриншот
 ![](https://raw.githubusercontent.com/pijawca/pijawca/main/resources/pijawcacast_preview.png)
