@@ -19,5 +19,5 @@
 ```makefile
 make up
 make down
-make build (without -d)
+make build
 ```
