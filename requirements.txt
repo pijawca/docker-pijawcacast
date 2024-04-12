@@ -8,7 +8,7 @@ cryptography==42.0.5
 Deprecated==1.2.14
 disnake==2.9.1
 frozenlist==1.4.1
-idna==3.6
+idna==3.7
 multidict==6.0.5
 psycopg==3.1.18
 psycopg-binary==3.1.18
