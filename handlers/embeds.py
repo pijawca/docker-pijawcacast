@@ -70,7 +70,8 @@ def castlastEmbed(match_id, duration, party_size, game_mode, lobby_type, hero_id
         title = '**Статистика о последнем матче**',
         description=f'[Перейти на сайт Opendota](https://www.opendota.com/matches/{match_id})\n'
         f'Матч длился: **{duration}**\n'
-        f'Размер лобби: {party_size} | Режим игры: **{game_mode}** | Тип лобби: {lobby_type}\n'
+        f'Размер лобби: {party_size}\n'
+        f'Режим игры: **{game_mode}**  |  Тип лобби: {lobby_type}\n'
         f'Играя за **{hero_id}** закончил со счетом:\n'
         f'Убийств: **{kills}** | Смертей: **{deaths}** | Помощи: **{assists}**',
         color = Color.yellow())

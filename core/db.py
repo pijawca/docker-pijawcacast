@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-from config import db_params
+from config import db_params, multiplier
 from datetime import datetime
 import psycopg
 
@@ -73,8 +73,7 @@ def update_experience(user_id):
             time_diff = time1 - time2
             total_seconds = time_diff.total_seconds()
             total_seconds = int(total_seconds) / 3
-            factor = 100 # МНОЖИТЕЛЬ
-            total = int(total_seconds*factor)/100
+            total = int(total_seconds*multiplier)/100
             cur.execute("UPDATE pijawcacast SET experience = experience + %s WHERE user_id = %s", (total, user_id))
             conn.commit()
             

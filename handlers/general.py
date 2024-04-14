@@ -4,10 +4,11 @@ from config import admins
 from handlers import embeds
 from re import findall
 import handlers.buttons as buttons
-import disnake
-import core.handlers_db as core
+import plugins.xp as plugins
+import core.db as core
 import requests
 import json
+import disnake
 
 
 class events():
@@ -113,8 +114,8 @@ class commands():
             else:
                 subscription = 'Нет'
                 
-            if experience <= 9:
-                experience = row[6] // 10
+            if experience <= 249:
+                experience = plugins.rank(experience)
                 for placehold in core.profile(user_id)[1]:
                     if placehold:
                         user_rank = placehold
@@ -122,6 +123,7 @@ class commands():
                         await ctx.send(embed = embeds.profileEmbed(f'• {nickname.upper()}', avatar_url, experience, user_rank, subscription), 
                         view = buttons.profile_btn())
             else:
+                experience = plugins.rank(experience)
                 for placehold in core.profile(user_id)[1]:
                     if placehold:
                         user_rank = placehold
@@ -133,11 +135,11 @@ class commands():
     async def rank(ctx):
         if ctx.author.bot:
             return
-        user_id = ctx.author.id
         
+        user_id = ctx.author.id
         if core.rank(user_id)[0] is not None:
             experience = core.rank(user_id)[0]
-            level = experience // 60
+            level = experience // 10
         await ctx.send(embed = embeds.rankEmbed(level, experience))
         
     @bot.command()
@@ -186,6 +188,8 @@ class commands():
             with open('json/game_mode.json', 'r') as f:
                json_data = json.load(f)
             game_mode = json_data.get(str(game_mode)).get('type')
+            if game_mode == 'Ranked Party':
+                game_mode = 'Групповой рейтинг'
         else:
             print(Exception)
 
@@ -194,6 +198,8 @@ class commands():
             with open('json/lobby_type.json', 'r') as f:
                json_data = json.load(f)
             lobby_type = json_data.get(str(lobby_type)).get('type')
+            if lobby_type == 'Normal':
+                lobby_type = 'Обычный матчмейкинг'
         else:
             print(Exception)
 

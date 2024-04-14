@@ -1,15 +1,8 @@
 up:
-	docker-compose -f docker-compose.yml up --force-recreate
+	docker-compose up
 
 rm:
-	docker-compose stop \
-	&& docker-compose down --rm all \
-	&& sudo rm -rf pgdata/
-
-build:
-	clear \
-	&& sudo docker-compose stop \
-	&& docker-compose down --rmi all \
-	&& docker volume prune \
-	&& rm -rf pgdata/ \
-	&& docker-compose -f docker-compose.yml up --build
+	sudo docker compose stop \
+	&& docker rm $(docker ps -a -q) \
+	&& docker rmi $(docker images -q) \
+	&& rm -rf pgdata \
