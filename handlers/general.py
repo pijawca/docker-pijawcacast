@@ -71,6 +71,10 @@ class administration():
         if user_id == admins[0]:
             await ctx.send(embed = embeds.patchEmbed())
         
+    @bot.command()
+    async def active_badge(interaction: disnake.AppCmdInter):
+        await interaction.send('Active Badge 0123456789.')
+
 class commands():
     @bot.command()
     async def start(ctx):
@@ -214,4 +218,3 @@ class commands():
         await ctx.send(embed = embeds.castlastEmbed(
             match_id, duration, party_size, game_mode, lobby_type, hero_id, kills, deaths, assists)
                        )
-        

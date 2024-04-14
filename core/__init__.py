@@ -1,1 +1,1 @@
-from core import handlers_db
+from core import db
