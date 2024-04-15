@@ -8,11 +8,12 @@ cryptography==42.0.5
 Deprecated==1.2.14
 disnake==2.9.1
 frozenlist==1.4.1
-idna==3.7
+idna==3.6
 multidict==6.0.5
 psycopg==3.1.18
 psycopg-binary==3.1.18
 pycparser==2.22
+PyGithub==2.3.0
 PyJWT==2.8.0
 PyNaCl==1.5.0
 requests==2.31.0
